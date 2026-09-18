@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiqi Ops - 个人主页</title>
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-sub: #64748b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-main);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-sub);
+        }
+
+        .section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .project-list li {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .project-list li:last-child {
+            border-bottom: none;
+        }
+
+        .project-list a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-list a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-sub);
+            font-size: 0.9rem;
+        }
+
+        /* 简单的动画效果 */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container > * {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <!-- 这里可以换成你自己的头像链接 -->
+        <img src="https://github.com/shiqi-ops.png" alt="Profile" style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 20px;">
+        <h1>你好，我是 Shiqi Ops 👋</h1>
+        <p>全栈开发者 / 开源爱好者 / 终身学习者</p>
+    </header>
+
+    <div class="section">
+        <h2>关于我</h2>
+        <p>欢迎来到我的个人主页！我热衷于探索新技术，喜欢用代码解决实际问题。目前主要关注后端架构与自动化运维领域。</p>
+        <p>这是我的 GitHub Pages 站点，用来记录我的学习历程和项目作品。</p>
+    </div>
+
+    <div class="section">
+        <h2>精选项目</h2>
+        <ul class="project-list">
+            <li>
+                <strong>🚀 CI/CD 自动化测试流程</strong><br>
+                基于 GitHub Actions 构建的自动化质检系统，支持前后端自动测试与部署。
+            </li>
+            <li>
+                <strong>🔗 shiqi-ops.github.io</strong><br>
+                就是你现在看到的这个网站！使用纯 HTML/CSS 构建，轻量且高效。
+            </li>
+            <li>
+                <strong>🛠️ 更多项目...</strong><br>
+                请访问我的 <a href="https://github.com/shiqi-ops" target="_blank">GitHub 主页</a> 查看完整仓库列表。
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Shiqi Ops. Built with ❤️ on GitHub.</p>
+    </footer>
+</div>
+
+</body>
+</html>
